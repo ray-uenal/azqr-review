@@ -6,12 +6,6 @@ on:
   workflow_dispatch: # Trigger manually
   schedule: # Trigger every Friday at midnight
     - cron: "0 0 * * 5"
-  push:
-    branches:
-      - main # Trigger on push to main
-  pull_request:
-    branches:
-      - main # Trigger on pull request to main
 
 jobs:
   build:
